@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-dark: #0b0b0b;
+    --bg-darker: #070707;
+    --text-light: #e5e5e5;
+    --text-muted: #9a9a9a;
+    --accent: #00ff41;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* =========================
+   BACKGROUND GRID 
+   ========================= */
+.background-grid {
+    position: fixed;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(0,255,65,0.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,255,65,0.12) 1px, transparent 1px);
+    background-size: 120px 120px;
+    pointer-events: none;
+    opacity: 0.15;
+    z-index: 1;
+}
+
+/* =========================
+   LAYOUT
+   ========================= */
+.wrapper {
+    position: relative;
+    z-index: 5;
+    max-width: 720px;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* =========================
+   TYPOGRAPHY
+   ========================= */
+h1 {
+    font-size: 2.8rem;
+    letter-spacing: 4px;
+    color: var(--accent);
+    margin-bottom: 18px;
+    text-shadow: 0 0 20px rgba(0,255,65,0.25);
+}
+
+.manifesto {
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+    color: var(--text-light);
+    margin-bottom: 36px;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin-bottom: 28px;
+}
+
+.status {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-bottom: 60px;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* =========================
+   LINK STYLING
+   ========================= */
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00cc36; 
+    text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+}
