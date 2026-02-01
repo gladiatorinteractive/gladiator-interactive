@@ -62,13 +62,6 @@ h1 {
     text-shadow: 0 0 20px rgba(0,255,65,0.25);
 }
 
-.manifesto {
-    font-size: 1.15rem;
-    letter-spacing: 1px;
-    color: var(--text-light);
-    margin-bottom: 36px;
-}
-
 .description {
     font-size: 1rem;
     line-height: 1.7;
